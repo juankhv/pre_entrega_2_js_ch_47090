@@ -11,7 +11,7 @@ const products = [
 
   let cart = []
 
-  let selection = prompt("Hola quieres comprar algún producto si o no").toLocaleLowerCase()
+  let selection = prompt("Hola quieres comprar algún producto si o no").toLowerCase()
 
 while(selection != "si" &&  selection != "no"){
     alert ("por favor elige si o no")
@@ -34,7 +34,7 @@ if(selection === "si"){
 }
 
 while(selection != "no"){
-    let vmp = prompt("Agrega un producto a tu carrito de compras").toLocaleLowerCase()
+    let vmp = prompt("Agrega un producto a tu carrito de compras").toLowerCase()
     let price = 0
 
     if(vmp === "scooter" || vmp === "bicicleta" || vmp === "patines" || vmp === "moto" || vmp === "monorueda" || vmp === "patineta"){
@@ -68,7 +68,7 @@ while(selection != "no"){
         alert("No tenemos ese VMP")
     }
 
-    selection = prompt("¿Deseas seguir comprando? si o no").toLocaleLowerCase()
+    selection = prompt("¿Deseas seguir comprando? si o no").toLowerCase()
 
     while(selection === "no"){
         alert("Gracias por tu compra")
